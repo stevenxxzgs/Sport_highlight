@@ -42,8 +42,8 @@ while true; do
   check_video_folder || sleep 10 # 如果文件夹为空，则等待5秒钟后继续循环
 
   play_video
-  # play_video
   sleep 5
+  play_video
   if inotifywait -q -e close_write --format '%f' "${VIDEO_FOLDER}"; then
     play_video
     ls -t "${VIDEO_FOLDER}"/*.MP4 | head -n 4 > "${VIDEO_LIST}" #相对路径

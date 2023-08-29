@@ -19,8 +19,8 @@ if __name__ == '__main__':
     interval = 300
     while True:
         now = datetime.datetime.now()
-        morning = datetime.datetime(year=now.year, month=now.month, day=now.day, hour=8, minute=30)
-        night = datetime.datetime(year=now.year, month=now.month, day=now.day, hour=22, minute=10)
+        morning = datetime.datetime(year=now.year, month=now.month, day=now.day, hour=8, minute=50)
+        night = datetime.datetime(year=now.year, month=now.month, day=now.day, hour=22, minute=40)
         # 将日期和时间格式化为字符串
         time_string = now.strftime("%Y-%m-%d_%H-%M-%S")
         if now > morning and now < night :
